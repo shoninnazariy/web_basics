@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lab_4</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <h1>Моя перша HTML-форма</h1>
+    <form action="https://httpbin.org/get" method="GET">
+      <p>
+        <label for="username">Ім'я:</label>
+        <input type="text" id="username" name="username">
+      </p>
+      <p>
+        <label>Дата народження:</label>
+          <input type="date" name="birthdate">
+      </p>
+      <p>
+        <label for="useremail">Імейл:</label>
+        <input type="email" id="useremail" name="useremail">
+      </p>
+      <p>
+        <label>Повідомлення: <textarea name="message""></textarea></label>
+      </p>
+      <h2>Ваші улюблені напої?</h2>
+      <p>
+      <label><input type="checkbox" name="coffee" value="coffee"> Кава</label> <br>
+      <label><input type="checkbox" name="tea" value="tea"> Чай</label> <br>
+      <label><input type="checkbox" name="juice" value="juice"> Сік</label>
+      </p>
+      <h2>Моя національність</h2>
+      <p>
+      <label><input type="radio" name="nationality" value="ukrainian"> Українець/ка</label> <br>
+      <label><input type="radio" name="nationality" value="polish"> Поляк/Полька</label> <br>
+      <label><input type="radio" name="nationality" value="other"> Інша</label></p>
+      <p>
+        <input type="submit" name="submit" id="submit" value="Надіслати"></input>
+        <input type="reset" name="reset" id="reset"value="Очистити"></input
+        >
+      </p>
+    </form>
+    <picture>
+      <source media="(max-width: 468px)" srcset="https://fastly.picsum.photos/id/518/300/500.jpg?hmac=7MTn7L-w-1m5pWodn_r98JwW5Jd6-IBELqRJvUpih1U">
+      <img src="https://fastly.picsum.photos/id/284/1000/400.jpg?hmac=sRhPbE1J4TVlaYPWbrwpMDQ_QEArwLKlEyADJOCteHA" alt="Photo"
+    </picture>
+    <script src="./index.mjs" type="module"></script>
+  </body>
+</html>
